@@ -157,7 +157,7 @@ top:0;
         margin:0;
     }
     .slide{
-        display:block;
+        display:block !important;
         /* display:column; */
         width:100%;
         text-align: center;
