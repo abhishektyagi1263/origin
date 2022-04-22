@@ -158,6 +158,7 @@ top:0;
     }
     .slide{
         display:block;
+        /* display:column; */
         width:100%;
         text-align: center;
     }
