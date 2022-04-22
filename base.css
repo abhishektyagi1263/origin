@@ -150,3 +150,30 @@ top:0;
 .scrollmagic-pin-spacer{
     postion:static !important;
 }
+
+@media screen and  (max-width:1024px){
+    main{
+        width:100%;
+        margin:0;
+    }
+    .slide{
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+    .herodesc{
+        padding: 0;
+        
+    }
+    .herodesc h2{
+        font-size: 1.6rem;
+        padding:1rem 0;
+    }
+    .herodesc p{
+        padding: 2rem 1rem;
+        font-size:1rem;
+        line-height:1.5rem;
+        text-align: center;
+    }
+}
+
