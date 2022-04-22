@@ -151,6 +151,11 @@ top:0;
     postion:static !important;
 }
 
+@media screen and (max width:1500px){
+    .hero-img{
+        height: 50vh;
+    }
+}
 @media screen and  (max-width:1024px){
     main{
         width:100%;
@@ -166,7 +171,7 @@ top:0;
         padding: 0;
         
     }
-    .herodesc h2{
+    .herodesc h1{
         font-size: 1.6rem;
         padding:1rem 0;
     }
@@ -178,5 +183,7 @@ top:0;
         text-align: center;
     }
     .visit{width:60%;margin: 0 auto;}
+
+    .detail-slide{width:100%;text-align:center;}
 }
 
