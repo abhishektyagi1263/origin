@@ -16,8 +16,11 @@ function animateSlides(){
             defaults:{duration:1, ease:'power2.inOut'}
         });
 
-        sliderT1.fromTo(revealing,{x:"0%"},{x:"100%"});
+        // sliderT1.fromTo(revealing,{x:"0%"},{x:"100%"});
+        sliderT1.fromTo(revealing,{opacity:1},{opacity:0});
 
+        // sliderT1.To(revealing,{});
+        // sliderT1.to(revealing,{display:'none'});
         sliderT1.fromTo(img,{scale:2,opacity:0},{scale:1,opacity:1},'-=1');
         sliderT1.fromTo(revealText,{x:"0%"},{x:"100%"},'-=0.1');
 

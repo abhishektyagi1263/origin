@@ -6,6 +6,7 @@
 body{background-color: #281326;color:white;
     font-family: 'Montserrat', sans-serif;
     overflow-x:hidden !important;
+    
 }
 
 .link1{
@@ -209,7 +210,7 @@ body {
 
 
 .body {
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
