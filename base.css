@@ -149,9 +149,9 @@ top:0;
     
 }
 
-.scrollmagic-pin-spacer{
-    postion:static !important;
-}
+/* .scrollmagic-pin-spacer{
+    position:static !important;
+} */
 
 @media screen and (max-width:1500px){
     .hero-img{

@@ -21,8 +21,9 @@ function animateSlides(){
 
         // sliderT1.To(revealing,{});
         // sliderT1.to(revealing,{display:'none'});
-        sliderT1.fromTo(img,{scale:2,opacity:0},{scale:1,opacity:1},'-=1');
-        sliderT1.fromTo(revealText,{x:"0%"},{x:"100%"},'-=0.1');
+        sliderT1.fromTo(img,{opacity:0},{opacity:1},'-=1');
+        // sliderT1.fromTo(revealText,{x:"0%"},{x:"100%"},'-=0.1');
+        sliderT1.fromTo(revealText,{display:1},{display:0},'-=0.1');
 
         sliderT1.fromTo(nav,{y:"-100%"},{y:"0%"},"-0.5");
         
@@ -35,12 +36,12 @@ function animateSlides(){
             
         })
         .setTween(sliderT1)
-        .addIndicators({colorStart:'white',
-        colorTrigger:'white',
-    name:"slide"
-    })
         .addTo(controller);
         // new Animation
+    //     .addIndicators({colorStart:'white',
+    //     colorTrigger:'white',
+    // name:"slide"
+    // })
 
         const pageT1=gsap.timeline();
         let nextslide = slides.length-1 === index ? 'end': slide[index+1];
@@ -53,12 +54,7 @@ function animateSlides(){
            triggerElement:slide,
            duration: '100%',
            triggerHook:0,
-        })
-        .addIndicators({colorStart:'white',
-        colorTrigger:'white',
-    name:"page",indent:200,
-    })
-    .setPin(slide,{pushFollowers:false})
+        }).setPin(slide,{pushFollowers:false})
     .setTween(pageT1)
     .addTo(controller)
     });
